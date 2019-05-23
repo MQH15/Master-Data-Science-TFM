@@ -13,3 +13,9 @@ Version 2
 - El archivo CODIGO_TFM_V2.ipynb contiene lineas de codigo agregadas que muestran el mapa de la ciudad NYC en la cual se realizan los viajes de taxi.
 - El archivo POLYGON_ZONE.shp contiene los datos longitud, latitud para poder graficar este mapa.
 
+Version 3
+
+- El archivo CODIGO_TFM_V3.ipynb contiene lineas de codigo agregadas que se basa en la limpieza de los datos previamente a entrenar el modelo.
+
+
+
