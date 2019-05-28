@@ -18,4 +18,6 @@ Version 3
 - El archivo CODIGO_TFM_V3.ipynb contiene lineas de codigo agregadas que se basa en la limpieza de los datos previamente a entrenar el modelo.
 
 
+Version 4
 
+- El archivo CODIGO_TFM_V4.ipynb contiene lineas de codigo agregadas que compara diferentes modelos de machine learning y las diferentes metricas. asimismo se ha revisado la calidad de las predicciones con respecto al valor real. 
