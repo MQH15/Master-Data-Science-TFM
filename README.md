@@ -1,6 +1,6 @@
 # TFM Master Data Science
 
-Este Repo tendra el trabajo de master, que es la prediccion del costo de viaje en un taxi. Utilizare los datos de la ciudad de New York 
+Este Repo contiene el trabajo de master, que trata sobre la prediccion del tiempo de duracion de viaje en un taxi. Utilizare los datos de la ciudad de New York 
 
 
 Version 1
@@ -20,4 +20,10 @@ Version 3
 
 Version 4
 
-- El archivo CODIGO_TFM_V4.ipynb contiene lineas de codigo agregadas que compara diferentes modelos de machine learning y las diferentes metricas. asimismo se ha revisado la calidad de las predicciones con respecto al valor real. 
+- El archivo CODIGO_TFM_V4.ipynb contiene lineas de codigo agregadas que compara diferentes modelos de machine learning y las diferentes metricas. asimismo se ha revisado la calidad de las predicciones con respecto al valor real.
+
+Version 5
+
+- El archivo CODIGO_TFM_V5.ipynb contempla el tratamiento de los datos, graficos de las variables a utilizar en el modelo, seleccion de variables, comparacion de modelos, importancia de variables, grafico de las zonas de acuerdo a la cantidad de dinero recaudado, asimismo de las zonas que mas recaudan dinero cual es el tiempo de duracion estimado por el modelo, esto ultimo como posible uso del modelo en produccion.
+
+
