@@ -1,29 +1,26 @@
 # TFM Master Data Science
 
-Este Repo contiene el trabajo de master, que trata sobre la prediccion del tiempo de duracion de viaje en un taxi. Utilizare los datos de la ciudad de New York 
+Este Repo contiene el trabajo de master, que trata sobre la prediccion del tiempo de duracion de viaje en un taxi. Utilizare los datos de la web NYC, https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page esta contiene informacion de los viajes que realizan las personas en la ciudad de New York donde se tiene variables como distancia del viaje, hora del inicio del viaje, zona inicial de viaje, zona final de viaje, costo del viaje, etc.
 
+*****************************************************************************************************
 
-Version 1
+En este repo se subira los datos recopilados en el archivo DATOS_TFM.csv, asimismo el archivo POLYGON_ZONE.shp que tiene las coordenadas de las zonas donde se realizan los viajes con la finalidad de ver graficamente en un mapa cuales son las zonas que recaudan mas dinero.
 
-- El archivo CODIGO_TFM.ipynb contiene lineas de codigo como primera version del TFM escrito en lenguaje python
-- Los archivos DATOS_TFM.csv y TAXI_ZONE.csv contienen los datos con los que se desarrollo el codigo del TFM
+*****************************************************************************************************
 
-Version 2
+El archivo CODIGO_FINAL.ipynb, principalmente contiene el codigo en python de como se ha trabajado estos datos para poder estimar el tiempo de duracion de los viajes en taxi en la ciudad de New York como pasos que tiene este codigo son:
 
-- El archivo CODIGO_TFM_V2.ipynb contiene lineas de codigo agregadas que muestran el mapa de la ciudad NYC en la cual se realizan los viajes de taxi.
-- El archivo POLYGON_ZONE.shp contiene los datos longitud, latitud para poder graficar este mapa.
+- Carga de datos
+- Limpieza de variables
+- Correlacion de variables, adicionalmente se ha graficado la distribucion de todas las variables
+- Escalado de variables numericas
+- Particion de los datos en train-test
+- Algoritmos basicos como la regresion lineal y sus variantes (LASSO y RIDGE)
+- Algoritmos de arboles ensamblados (GBM y RANDOMFOREST)
+- Algoritmo lightgbm, para este algoritmo se ha tuneado los principales parametros
+- Importancia de variables
+- Medicion de metricas de algoritmos
+- Revision de las predicciones, aqui se ha evaluado el error en cada registro
 
-Version 3
-
-- El archivo CODIGO_TFM_V3.ipynb contiene lineas de codigo agregadas que se basa en la limpieza de los datos previamente a entrenar el modelo.
-
-
-Version 4
-
-- El archivo CODIGO_TFM_V4.ipynb contiene lineas de codigo agregadas que compara diferentes modelos de machine learning y las diferentes metricas. asimismo se ha revisado la calidad de las predicciones con respecto al valor real.
-
-Version 5
-
-- El archivo CODIGO_TFM_V5.ipynb contempla el tratamiento de los datos, graficos de las variables a utilizar en el modelo, seleccion de variables, comparacion de modelos, importancia de variables, grafico de las zonas de acuerdo a la cantidad de dinero recaudado, asimismo de las zonas que mas recaudan dinero cual es el tiempo de duracion estimado por el modelo, esto ultimo como posible uso del modelo en produccion.
-
+Y como valor adicional se ha graficado las zonas con mayores ingresos, se ha tomado el top 10 y sobre estas se ha verificado la prediccion.
 
