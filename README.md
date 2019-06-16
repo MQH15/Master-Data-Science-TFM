@@ -99,19 +99,19 @@ Limpieza de variables: se han revisado las variables store_and_fwd_flag, RateCod
 
 Modelos Básicos: Se probo los modelos de regresión lineal y sus variantes Lasso y Ridge, los resultados de estos se muestran a continuación:
 
-| Modelo           | mean_squared_error | mean_absolute_error | mean_absolute_percentajeError | correlationTarget_prediccion |
-| ---------------- | ------------------ | ------------------- | ----------------------------- | ---------------------------- |
-| Regresion_Lineal | 111152.1107        | 228.8491            | 30.2038                       | 0.7771                       |
-| Lasso            | 111175.5925        | 228.8782            | 30.2316                       | 0.7770                       |
-| Ridge            | 111153.0357        | 229.0062            | 30.2713                       | 0.7771                       |
+| Modelo           | mean_squared_error | mean_absolute_error | mean_absolute_percentaje_error | correlation_target_prediccion |
+| ---------------- | ------------------ | ------------------- | ------------------------------ | ----------------------------- |
+| Regresion_Lineal | 111152.1107        | 228.8491            | 30.2038                        | 0.7771                        |
+| Lasso            | 111175.5925        | 228.8782            | 30.2316                        | 0.7770                        |
+| Ridge            | 111153.0357        | 229.0062            | 30.2713                        | 0.7771                        |
 
 De acuerdo a los resultados observamos que el que tiene mejores métricas es la regresion lineal ya que el error es el menor de los tres.
 
 Modelos Ensamblados: Se probo los modelos arboles ensamblados GBM y RANDOMFOREST, los resultados de estos se muestran a continuación:
 
-|Modelo|mean_squared_error|mean_absolute_error|mean_absolute_percentaje_error|correlation_target_prediccion|
-|GBM|78385.0978|186.3683|23.2331|0.8493|
-|RandomForest|74708.8962|182.7290|22.8570|0.8574|
+| Modelo       | mean_squared_error | mean_absolute_error | mean_absolute_percentaje_error | correlation_target_prediccion |
+| GBM          | 78385.0978         | 186.3683            | 23.2331                        | 0.8493                        |
+| RandomForest | 74708.8962         | 182.7290            | 22.8570                        | 0.8574                        |
 
 De acuerdo a los resultados observamos estos modelos obtienen mejores resultados que los modelos basicos probados antes, entre los dos el que tiene mejores métricas es Randomforest ya que el error es menos que GBM.
 
