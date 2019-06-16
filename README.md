@@ -15,11 +15,11 @@ La comision de taxis y limosinas en New York, es una agencia encomendada por la 
 
 TLC otorga licencias a más de 130,000 vehículos en la ciudad de Nueva York. Cada vehículo recibe inspecciones exhaustivas de seguridad y emisiones por TLC y debe ser conducido por conductores con licencia de TLC que se hayan sometido a una verificación de antecedentes y hayan aprobado los requisitos de educación de TLC.
 
-    • Los taxis verdes brindan servicio de granizo en la calle y servicio preestablecido en el norte de Manhattan (sobre E 96th St y W 110th St) y en los distritos exteriores.
+- Los taxis verdes brindan servicio de granizo en la calle y servicio preestablecido en el norte de Manhattan (sobre E 96th St y W 110th St) y en los distritos exteriores.
 
-    • Los taxis verdes cobran tarifas medidas estándar para todos los viajes de granizo callejero. El precio de los viajes preestablecidos se establece por la base o aplicación de teléfono inteligente utilizada para reservar el viaje.
+- Los taxis verdes cobran tarifas medidas estándar para todos los viajes de granizo callejero. El precio de los viajes preestablecidos se establece por la base o aplicación de teléfono inteligente utilizada para reservar el viaje.
 
-    • Los taxis verdes se identifican fácilmente por su color verde, las marcas de taxi en “T” y los números de licencia en el techo y los lados del vehículo.
+- Los taxis verdes se identifican fácilmente por su color verde, las marcas de taxi en “T” y los números de licencia en el techo y los lados del vehículo.
 
 La web de dicha entidad para mayor información: https://www1.nyc.gov/site/tlc/about/about-tlc.page 
 
@@ -27,23 +27,25 @@ Los datos con los que se trabajo en dicho proyecto se descargaron de dicha web: 
 
 #### Descripcion de los datos
 
-Se ha descargado los datos del año 2018, entre las variables que hay son: 
-VendorID: Un código que indica el proveedor de LPEP que proporcionó el registro.
+Se ha descargado los datos del año 2018, entre las variables que hay son:
+
+- VendorID: Un código que indica el proveedor de LPEP que proporcionó el registro.
 1 = Creative Mobile Technologies, LLC;
 2 = VeriFone Inc.
 
-lpep_pickup_datetime: La fecha y hora en que inicio el viaje.
-lpep_dropoff_datetime: La fecha y hora en que finalizo el viaje.
+- lpep_pickup_datetime: La fecha y hora en que inicio el viaje.
 
-Passenger_count: El número de pasajeros en el vehículo.
+- lpep_dropoff_datetime: La fecha y hora en que finalizo el viaje.
 
-Trip_distance: La distancia de viaje transcurrida en millas reportada por el taxímetro.
+- Passenger_count: El número de pasajeros en el vehículo.
 
-PULocationID: TLC Zona de Taxi en la que inicio el taxímetro.
+- Trip_distance: La distancia de viaje transcurrida en millas reportada por el taxímetro.
 
-DOLocationID: TLC Zona de Taxi en la que finalizo el taxímetro.
+- PULocationID: TLC Zona de Taxi en la que inicio el taxímetro.
 
-RateCodeID: El código de tarifa final vigente al final del viaje:
+- DOLocationID: TLC Zona de Taxi en la que finalizo el taxímetro.
+
+- RateCodeID: El código de tarifa final vigente al final del viaje:
 1 = tasa estándar
 2 = JFK
 3 = Newark
@@ -51,11 +53,11 @@ RateCodeID: El código de tarifa final vigente al final del viaje:
 5 = tarifa negociada
 6 = Paseo en grupo
 
-Store_and_fwd_flag: Esta bandera indica si el registro de viaje se llevó a cabo en el vehículo memoria antes de enviar al proveedor, también conocido como "almacenar y reenviar", porque el vehículo no tenía conexión con el servidor.
+- Store_and_fwd_flag: Esta bandera indica si el registro de viaje se llevó a cabo en el vehículo memoria antes de enviar al proveedor, también conocido como "almacenar y reenviar", porque el vehículo no tenía conexión con el servidor.
 Y = tienda y viaje de ida
 N = no es una tienda y viaje de ida
 
-Payment_type: Un código numérico que indica cómo pagó el pasajero por el viaje.
+- Payment_type: Un código numérico que indica cómo pagó el pasajero por el viaje.
 1 = tarjeta de crédito
 2 = efectivo
 3 = Sin cargo
@@ -63,19 +65,19 @@ Payment_type: Un código numérico que indica cómo pagó el pasajero por el via
 5 = Desconocido
 6 = viaje vacío
 
-Fare_amount: La tarifa de tiempo y distancia calculada por el medidor.
+- Fare_amount: La tarifa de tiempo y distancia calculada por el medidor.
 
-Extra: Extras y recargos varios. Actualmente, esto solo incluye los cargos de $ 0.50 y $ 1 por hora pico y por la noche.
+- Extra: Extras y recargos varios. Actualmente, esto solo incluye los cargos de $ 0.50 y $ 1 por hora pico y por la noche.
 
-MTA_tax: $ 0.50 de impuestos MTA que se activan automáticamente en función del medidor tarifa en uso.
+- MTA_tax: $ 0.50 de impuestos MTA que se activan automáticamente en función del medidor tarifa en uso.
 
-Improvement_surcharge: Recargo por mejora de $ 0.30 en viajes aclamados en la bandera soltar. El recargo por mejora comenzó a percibirse en 2015.
+- Improvement_surcharge: Recargo por mejora de $ 0.30 en viajes aclamados en la bandera soltar. El recargo por mejora comenzó a percibirse en 2015.
 
-Tip_amount: Cantidad de propina: este campo se rellena automáticamente para tarjeta de crédito
+- Tip_amount: Cantidad de propina: este campo se rellena automáticamente para tarjeta de crédito
 
-Tolls_amount: Importe total de todos los peajes pagados en viaje.
+- Tolls_amount: Importe total de todos los peajes pagados en viaje.
 
-Total_amount: El importe total cobrado a los pasajeros. No incluye propinas en efectivo.
+- Total_amount: El importe total cobrado a los pasajeros. No incluye propinas en efectivo.
 
 #### Metodologia
 
@@ -149,18 +151,19 @@ Observamos que las principales variables son la zona inicial de trayecto, la zon
 
 Esta tabla muestra segun el porcentaje de los datos cuantos segundos falla el modelo, es decir en el 70% de los datos el error aproximado es de +-3 minutos (179.97 segundos).
 
-|porcentaje_datos|range_dif_real|
-|0.00|-3220.862271|
-|0.10|-259.471695|
-|0.15|-175.488691|
-|0.30|-55.531575|
-|0.40|-10.145611|
-|0.50|26.069725|
-|0.60|59.329183|
-|0.70|95.715358|
-|0.85|182.873865|
-|0.90|238.821231|
-|1.00|1855.208280|
+| porcentaje_datos | range_dif_real |
+| ---------------- | -------------- |
+| 0.00             | -3220.862271   |
+| 0.10             | -259.471695    |
+| 0.15             | -175.488691    |
+| 0.30             | -55.531575     |
+| 0.40             | -10.145611     |
+| 0.50             | 26.069725      |
+| 0.60             | 59.329183      |
+| 0.70             | 95.715358      |
+| 0.85             | 182.873865     |
+| 0.90             | 238.821231     |
+| 1.00             | 1855.208280    |
 
 En esta tabla observamos que el error subestimado en 15% de los datos es menor a 3 minutos y el error sobreestimado 15% de los datos es mayor a 3 minutos.
 
