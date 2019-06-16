@@ -176,3 +176,12 @@ Se tiene el archivo POLYGON_ZONE.shp que contiene las coordenadas de las zonas q
 Podemos observar que las zonas con el color mas fuerte indican aquellas donde hay mayor recaudación de dinero.
 
 
+#### Conclusiones Finales
+
+Finalmente podemos concluir con los resultados del proyecto, que el tiempo de duración de los viajes que realizan los taxis verdes en la ciudad de New York si dependen de las características planteadas al inicio del proyecto. Es decir que el tiempo de duración de los viajes en New York depende de la zona inicial del viaje, la zona final del viaje, la distancia del viaje, la hora en la que se tomo el viaje. Esto se evidencia en el grafico de importancia de variables del modelo final. Asimismo podemos plantear con estos resultados mejoras en la eficiencia de los viajes tales como:
+- Plantear costos de viaje acorde al tiempo de duración a priori.
+- Plantear una mejora en los costos de viaje en las zonas iniciales que tienen mayor o menor demanda de viajes y que los tiempos de viaje sean cortos.
+- Plantear mejoras en la ruta de viaje, esto con la finalidad de disminuir el tiempo de viaje.
+- Aumentar la distribución de taxis en las rutas de viaje con mayor tiempo de duración.
+- Mejorar la calidad de atención en las rutas con mayor tiempo de viaje.
+
