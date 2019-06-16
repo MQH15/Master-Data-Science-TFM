@@ -125,7 +125,6 @@ LightGBM: Se prueba este modelo con la finalidad de tunear los parametros mas im
 | LightGBM | 60677.7650         | 163.2641            | 20.3337                        | 0.8854                        |
  
 Observamos finalmente que las métricas de este modelo son incluso mejores que GBM y RANDOMFOREST, por lo que nos quedaremos con este ultimo modelo con sus parámetros tuneados.
-5 Importancia de variables:
 
 - Importancia de variables:
 
