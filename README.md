@@ -110,6 +110,7 @@ De acuerdo a los resultados observamos que el que tiene mejores métricas es la 
 Modelos Ensamblados: Se probo los modelos arboles ensamblados GBM y RANDOMFOREST, los resultados de estos se muestran a continuación:
 
 | Modelo       | mean_squared_error | mean_absolute_error | mean_absolute_percentaje_error | correlation_target_prediccion |
+| ------------ | ------------------ | ------------------- | ------------------------------ | ----------------------------- |
 | GBM          | 78385.0978         | 186.3683            | 23.2331                        | 0.8493                        |
 | RandomForest | 74708.8962         | 182.7290            | 22.8570                        | 0.8574                        |
 
@@ -117,8 +118,9 @@ De acuerdo a los resultados observamos estos modelos obtienen mejores resultados
 
 LightGBM: Se prueba este modelo con la finalidad de tunear los parametros mas importantes ya que el procesamiento de este es mucho mas rapido que los anteriores, y los resultados se muestran a continuacion:
 
-|Modelo|mean_squared_error|mean_absolute_error|mean_absolute_percentaje_error|correlation_target_prediccion|
-|LightGBM|60677.7650|163.2641|20.3337|0.8854|
+| Modelo   | mean_squared_error | mean_absolute_error | mean_absolute_percentaje_error | correlation_target_prediccion |
+| -------- | ------------------ | ------------------- | ------------------------------ | ----------------------------- |
+| LightGBM | 60677.7650         | 163.2641            | 20.3337                        | 0.8854                        |
  
 Observamos finalmente que las métricas de este modelo son incluso mejores que GBM y RANDOMFOREST, por lo que nos quedaremos con este ultimo modelo con sus parámetros tuneados.
 5 Importancia de variables:
@@ -131,18 +133,19 @@ Observamos que las principales variables son la zona inicial de trayecto, la zon
 
 - Evaluación de las predicciones: Aqui evaluamos el error que tienen las predicciones: 
 
-|porcentaje_datos|range_dif|
-|0.00|0.000527|
-|0.10|18.873522|
-|0.20|37.967869|
-|0.30|57.834485|
-|0.40|79.654525|
-|0.50|105.001794|
-|0.60|136.756686|
-|0.70|179.977847|
-|0.80|247.299757|
-|0.95|517.023660|
-|1.00|3220.862271|
+| porcentaje_datos | range_dif   |
+| ---------------- | ----------- |
+| 0.00             | 0.000527    |
+| 0.10             | 18.873522   |
+| 0.20             | 37.967869   |
+| 0.30             | 57.834485   |
+| 0.40             | 79.654525   |
+| 0.50             | 105.001794  |
+| 0.60             | 136.756686  |
+| 0.70             | 179.977847  |
+| 0.80             | 247.299757  |
+| 0.95             | 517.023660  |
+| 1.00             | 3220.862271 |
 
 Esta tabla muestra segun el porcentaje de los datos cuantos segundos falla el modelo, es decir en el 70% de los datos el error aproximado es de +-3 minutos (179.97 segundos).
 
