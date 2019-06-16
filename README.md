@@ -89,7 +89,7 @@ Limpieza de variables: se han revisado las variables store_and_fwd_flag, RateCod
 
 - Selección y correlación de variables:
 
-https://github.com/MQH15/Master-Data-Science-TFM/correlacion.png
+https://github.com/MQH15/Master-Data-Science-TFM/blob/master/correlacion.png
 
 - Escalado de variables: Como tenemos diferentes variables numericas y en diferente escala, se ha estandarizado la escala para todas las variables, esto con la finalidad de obtener mejores resultados.
 
@@ -124,7 +124,7 @@ Observamos finalmente que las métricas de este modelo son incluso mejores que G
 
 - Importancia de variables:
 
-https://github.com/MQH15/Master-Data-Science-TFM/importancia.png
+https://github.com/MQH15/Master-Data-Science-TFM/blob/master/importancia.png
 
 Observamos que las principales variables son la zona inicial de trayecto, la zona final de trayecto, la distancia del trayecto, la hora en la que inicia el trayecto.
 
@@ -164,7 +164,7 @@ En esta tabla observamos que el error subestimado en 15% de los datos es menor a
 
 Se tiene el archivo POLYGON_ZONE.shp que contiene las coordenadas de las zonas que realizan viajes.
 
-https://github.com/MQH15/Master-Data-Science-TFM/mapa.png
+https://github.com/MQH15/Master-Data-Science-TFM/blob/master/mapa.png
 
 Podemos observar que las zonas con el color mas fuerte indican aquellas donde hay mayor recaudación de dinero.
 
