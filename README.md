@@ -13,14 +13,6 @@ La idea principal del proyecto es determinar si se puede estimar la duración de
 
 La comision de taxis y limosinas en New York, es una agencia encomendada por la Carta, cuyo objetivo es la continuación, el desarrollo y la mejora del servicio de taxis y de alquiler en la Ciudad de New York. Dicha entidad tiene diferentes reglas, leyes, órdenes, decisiones u otras fuentes legales que se debe cumplir dentro de la ciudad.
 
-TLC otorga licencias a más de 130,000 vehículos en la ciudad de Nueva York. Cada vehículo recibe inspecciones exhaustivas de seguridad y emisiones por TLC y debe ser conducido por conductores con licencia de TLC que se hayan sometido a una verificación de antecedentes y hayan aprobado los requisitos de educación de TLC.
-
-- Los taxis verdes brindan servicio de granizo en la calle y servicio preestablecido en el norte de Manhattan (sobre E 96th St y W 110th St) y en los distritos exteriores.
-
-- Los taxis verdes cobran tarifas medidas estándar para todos los viajes de granizo callejero. El precio de los viajes preestablecidos se establece por la base o aplicación de teléfono inteligente utilizada para reservar el viaje.
-
-- Los taxis verdes se identifican fácilmente por su color verde, las marcas de taxi en “T” y los números de licencia en el techo y los lados del vehículo.
-
 La web de dicha entidad para mayor información: https://www1.nyc.gov/site/tlc/about/about-tlc.page 
 
 Los datos con los que se trabajo en dicho proyecto se descargaron de dicha web: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page, estos están agrupados por año, por mes y por tipo de vehiculo, Especificamente para este proyecto se esta considerando el año 2018 y viajes en taxi verde.
